@@ -41,7 +41,7 @@ class SongsService {
     }
 
     const query = {
-      text: `SELECT * FROM songs ${values.length > 0 ? `WHERE ${optQuery.join(" OR ")}` : ""}`,
+      text: `SELECT * FROM songs ${values.length > 0 ? `WHERE ${optQuery.join(" AND ")}` : ""}`,
       values,
     };
 
