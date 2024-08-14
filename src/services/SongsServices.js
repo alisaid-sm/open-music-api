@@ -74,7 +74,7 @@ class SongsService {
     }
 
     if (albumId) {
-      optionalQuery.push(`albumId = $${updateValues.length + 1}`)
+      optionalQuery.push(`album_id = $${updateValues.length + 1}`)
       updateValues.push(albumId);
     }
 
